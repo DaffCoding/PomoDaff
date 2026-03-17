@@ -25,17 +25,39 @@ body {
 
 }
 
+* {
+
+}
+
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+main  {
+  display: flex;
+  justify-content: center;
+  border: solid 5px rgb(80, 200, 120);
+  margin: 10px;
+  padding: 1rem;
 }
 
-footer {
+.pomoDaff {
+  border: solid red 3px;
+  padding: 1rem;
+  width: 25rem;
+  height: 30rem;
 
 }
+.pomoDaff > section  {
+  display: flex;
+  justify-content: center;
+  border: solid darkblue 2px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
