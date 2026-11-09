@@ -43,10 +43,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60rem;
+  height: 100%;
   width: 100%;
+  padding: 1rem;
 }
-
 main > h1 {
   font-size: 4em;
   color: #f0f6d6;
@@ -54,41 +54,35 @@ main > h1 {
 }
 
 main > .pomoDaff {
-  border: solid 2px #430306;
+  border: solid 3px #430306;
   background: #DCAC90;
   display: flex;
   flex-direction: column;
-  height: 45rem;
-  width: 40rem;
+  height: 35em;
+  width: 35em;
 }
-
 main > .pomoDaff > .top {
-  border: solid 2px blue;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 35%;
+  height: 40%;
   width: 100%;
 }
-
 main > .pomoDaff > .top > .gauge {
-  border: solid 2px #430306;
+  border: solid 8px #430306;
   background-color: #F3FAF8;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 60%;
   width: 80%;
 }
-
 main > .pomoDaff > .top > .gauge > h2 {
   font-size: 10em;
 }
-
 main > .pomoDaff > .top > .buttonWrapper {
-  border: solid 2px black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -97,14 +91,14 @@ main > .pomoDaff > .top > .buttonWrapper {
   width: 100%;
 }
 main > .pomoDaff > .top > .buttonWrapper > button {
-  height: 50%;
-  width: 23%;
+  border: solid 8px #430306;
+  height: 60%;
+  width: 23.8%;
   font-size: x-large;
 }
 
 main > .pomoDaff > .bottom {
-  border: solid 2px #430306;
-  height: 45%;
+  height: 60%;
   width: 100%;
 }
 
