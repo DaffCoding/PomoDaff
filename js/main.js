@@ -1,57 +1,63 @@
-let secondsRemaining = 23;
-let minutesRemaining = 8;
-const minutes = Math.floor(secondsRemaining / 60);
-const seconds = (secondsRemaining - (minutes - 60));
+let timer = 0;
+let countdown = 0;
+let seconds = 0;
+let minute = 0;
+
+let secondOnes = countdown - (60 - countdown);
+let secondTens = Math.floor(secondOnes / 10);
+let minuteOnes = Math.floor(secondTens / 6);
+let minuteTens = Math.floor(minuteOnes / 10);
+
+let timeRemaining = 0;
 let intervalId = null;
 
+document.querySelector('#timer1').addEventListener('click', halfMin) // Timer1 = 30 Second Timer Temp Name
 
-document.querySelector('.start1').addEventListener('click', start30Secs)
-document.querySelector('.start2').addEventListener('click', start90Secs)
-document.querySelector('.reset').addEventListener('click', reset)
-
-
-function start30Secs() {
+function halfMin() {
   clearInterval(intervalId);
-  secondsRemaining = 30;
+
+  countdown = 30; // 1000 * 1 = Minute
   
-  document.querySelector('.minutes').textContent = Object.values(Math.floor(minutes));
-  document.querySelector('.seconds').textContent = (secondsRemaining - (minutes * 60));
+  secondOnes = countdown - (60 - countdown);
+  secondTens = Math.floor(secondOnes / 10);
+  minuteOnes = Math.floor(secondTens / 6);
+  minuteTens = Math.floor(minuteOnes / 10);
 
+  // document.querySelector('.second').textContent = seconds;
+  
   intervalId = setInterval(() => {
-    secondsRemaining--;
-    document.querySelector('.seconds').textContent = secondsRemaining;
-
-    if (secondsRemaining <= 0) {
+    countdown--;
+    document.querySelector('.second-ones').textContent = (secondOnes);
+    document.querySelector('.second-tens').textContent = (secondTens);
+    document.querySelector('.minute-ones').textContent = (minuteOnes);
+    document.querySelector('.minute-tens').textContent = (minuteTens);
+    
+    if (countdown <= 0) {
       clearInterval(intervalId);
       intervalId = null;
     }
   }, 1000);
 }
 
-function start90Secs() {
-  clearInterval(intervalId);
-  secondsRemaining = 90;
-  minutesRemaining = 1;
-  
-  document.querySelector('.minutes').textContent = Object.values(Math.floor(minutes));
-  document.querySelector('.seconds').textContent = (secondsRemaining - (minutes * 60));
 
-  intervalId = setInterval(() => {
-    secondsRemaining--;
-    document.querySelector('.seconds').textContent = secondsRemaining;
+// intervalId = setInterval(() => {
+//     secondsRemaining--;
+//     document.querySelector('.seconds').textContent = secondsRemaining;
 
-    if (secondsRemaining <= 0) {
-      clearInterval(intervalId);
-      intervalId = null;
-    }
-  }, 1000);
-}
+//     if (secondsRemaining <= 0) {
+//       clearInterval(intervalId);
+//       intervalId = null;
+//     }
+//   }, 1000);
+// }
 
-function reset() {
-  clearInterval(intervalId);
-  intervalId = null;
-  secondsRemaining = 0;
-  
-  document.querySelector('.seconds').textContent = '00';
-  document.querySelector('.minutes').textContent = '00';
-}
+
+
+// ( 1000ms = 1 Second ) 
+// ( 60 * 1000ms = 60,000 = 1 Minute ) 
+// ( 60 / 60 = 1 )
+
+// 
+
+// Math.floor()
+

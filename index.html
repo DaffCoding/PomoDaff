@@ -2,50 +2,70 @@
 <html lang="en">
 	<head>
   	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
+  	<meta name="training room" content="the room you're training in">
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>PomoDaff</title>
+		<title>PomoDaff V3</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<main>
-			<h1>PomoDaff</h1>
-			<section class="pomoDaff">
-				<div class="top">
-					<section class="gauge">
-						<h2 class="minutes" hidden>00</h2>   <!-- Hidden -->
-						<h2 hidden>:</h2>  <!-- Hidden -->
-						<h2 class="seconds">00</h2>
-					</section>
-					<section class="buttonWrapper">
-            <button class="start1" type="button" name="button">30 Secs</button>
-            <button class="start2" type="button" name="button">90 Secs</button>
-						<button class="reset" type="button" name ="button">Reset</button>
-					</section>
-				</div>
-				<div class="bottom">
-				</div>
-			</section>
-		</main>
-
+    <header>
+      <h1>"PomoDaff"</h1>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section class='hero'> <!-- change hero to PomoDaff in the future -->
+        <section class='gauge'>
+          <span class='minute-tens'>0</span>
+          <span class='minute-ones'>0</span>
+          <span>:</span>
+          <span class='second-tens'>0</span>
+          <span class='second-ones'>0</span>
+        </section>
+        <div class='buttonWrapper'>
+          <button id="timer1" type="button" name="button">30 Seconds</button>
+        </div>
+      </section>
+      <section>
+        <section class='recentActivity'>
+        </section>
+        <section class='weeklyGoal'></section>
+      </section>
+    </main>
+    
+    <section class='logSection'>
+      <section class='focusToday'>
+        <h2>Focus Today</h2>
+      </section>
+      <section class='sessions'>
+        <h2>Sessions</h2>
+      </section>
+      <section class='tasks'></section>
+    </section>
+    
 		<script type="text/javascript" src="js/main.js"></script>
-
 	</body>
 </html>
+
 <!-- 
 
 -----------------------
 🧠 LAST THOUGHTS
-Working on: Buttons of the clock, pausing to create result box for timer
-Problem: Currently, it was figuring out how to give space to Start and Pause Buttons
-Next Steps: Creating the result Box with an ID for Result
-
+Working on: [Describe feature]
+Problem: [Any bug or blocker]
+Next Steps: [What to do when I return]
 -----------------------
 
-
-
+-->

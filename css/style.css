@@ -25,85 +25,145 @@ body {
 
 }
 
-* {
-
-}
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+header {
+  border: solid 2px black;
+  color: #EAE6DC;
+  background-color: #2C466E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
 
+header > nav {
+  height: 100%;
+  width: 100%;
+}
 
+header > nav > ul {
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+  padding: 0 1em;
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+
+header > nav > ul > li {
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  list-style-type: none;
+  font-size: x-large;
+}
+
+h1 {
+  color: #ED7568;
+  width: 20%;
+  text-align: center;
+  margin: 3px 0;
+  text-align: middle;
+}
 
 main {
-  border: solid 5px black;
-  background: #018692;
+  background-color: #EAE6DC;
+  color: #2C466E;
+  display: flex;
+  flex-direction: row;
+  border: solid 2px black;
+  height: 42rem;
+  width: 100%;
+}
+
+main > section.hero {
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 65%;
+}
+
+
+
+main > section.hero > .gauge {
+  border: solid 2px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15em;
+  width: 32em;
+}
+
+main > section.hero > .gauge > span {
+  font-size: 12em;
+}
+
+
+
+main > section.hero + section {
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 35%;
+}
+
+main > section.hero + section > section.recentActivity {
+  border: solid 2px black;
+  height: 60%;
+  width: 100%;
+}
+
+main > section.hero + section > section.weeklyGoal {
+  border: solid 2px black;
+  height: 40%;
+  width: 100%;
+}
+
+section.logSection {
+  border: solid 2px black;
+  display: flex;
+  height: 20rem;
+  width: 100%;
+}
+
+section.logSection > section {
+  border: solid 2px black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
-}
-main > h1 {
-  font-size: 4em;
-  color: #f0f6d6;
-  font-style: italic;
+  flex: 1;
+  margin: 5px;
 }
 
-main > .pomoDaff {
-  border: solid 3px #430306;
-  background: #DCAC90;
-  display: flex;
-  flex-direction: column;
-  height: 35em;
-  width: 35em;
-}
-main > .pomoDaff > .top {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 40%;
-  width: 100%;
-}
-main > .pomoDaff > .top > .gauge {
-  border: solid 8px #430306;
-  background-color: #F3FAF8;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 60%;
-  width: 80%;
-}
-main > .pomoDaff > .top > .gauge > h2 {
-  font-size: 10em;
-}
-main > .pomoDaff > .top > .buttonWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 40%;
-  width: 100%;
-}
-main > .pomoDaff > .top > .buttonWrapper > button {
-  border: solid 8px #430306;
-  height: 60%;
-  width: 23.8%;
-  font-size: x-large;
-}
 
-main > .pomoDaff > .bottom {
-  height: 60%;
-  width: 100%;
+
+footer {
+
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* buttons, it's time for buttons  */
+/* 
+#2C466E - Indigo Ocean - Sidebar, Header, Primary-Text
+#EAE6DC - Dhow Canvas - Main Dashboard background, Neutral surface
+#E6DAC4 - Pearl Shell - Cards, secondary panels, notes
+#ED7568 - Reef Pink - Buttons, Active States, Progress 
+*/
