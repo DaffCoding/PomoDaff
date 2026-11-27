@@ -1,83 +1,55 @@
 # 🍅 PomoDaff
 
-A browser-based Pomodoro productivity timer built with HTML, CSS, and
-vanilla JavaScript.
+**Study & Focus Management Web Application**
 
-PomoDaff is a personal productivity project designed to help me structure
-focused development and study sessions while giving me a practical environment
-for strengthening JavaScript, responsive design, and accessible UI development.
+PomoDaff is a browser-based productivity application designed to help users organize study sessions, manage their focus time, and develop consistent productivity habits.
 
-> 🚧 Currently in development
+Built with HTML, CSS, and vanilla JavaScript, the application emphasizes intuitive interactions, responsive design, accessibility, and maintainable front-end architecture.
 
-## 🎯 Project Goals
+> 🚧 Status: Active Development — Version 3
 
-PomoDaff began as a project I wanted to actually use in my own workflow rather
-than build only as an exercise.
+## Project Purpose
 
-The goals are to:
+PomoDaff originated from a personal need for a dedicated study and development tool. The long-term goal is to provide a centralized workspace where users can manage their focus sessions and monitor their progress without unnecessary distractions.
 
-- Build a functional Pomodoro timer from the ground up
-- Strengthen JavaScript fundamentals through real application logic
-- Practice responsive, accessible interface design
-- Explore application state such as running, paused, and completed sessions
-- Create a project that can continue growing alongside my development skills
+## Current Development
 
-## ✨ Planned / Current Features
+- Interactive countdown timer
+- Dynamic timer display
+- Event-driven user interactions
+- Dashboard layout and interface structure
+- Responsive and accessible interface design
 
-- Pomodoro countdown timer
-- Start, pause, and reset controls
-- Visual progress indicator
-- Focus-session tracking
-- Responsive interface
-- Accessible controls and interaction states
-- Session history / completed-session logging
-
-## 🛠️ Built With
-
-- HTML5
-- CSS3
-- JavaScript
-- Normalize.css
-
-## 📸 Preview
-
-<!-- Add screenshot here -->
-
-![PomoDaff application preview](./assets/images/pomodaff-preview.png)
-
-## 🧠 What I'm Practicing
-
-This project is helping me strengthen:
+## Technical Focus
 
 - DOM manipulation
 - Event handling
-- Timer and interval logic
 - Application state management
+- Timer and interval management
 - Semantic HTML
 - Responsive CSS
 - Accessible interaction design
 
-## 🗺️ Roadmap
+## Technologies
 
-- [ ] Complete countdown logic
-- [ ] Implement Start / Pause / Reset
-- [ ] Add progress gauge
-- [ ] Add completed-session tracking
-- [ ] Improve keyboard accessibility
-- [ ] Add responsive mobile layout
-- [ ] Add configurable focus and break durations
-- [ ] Deploy live version
+- HTML
+- CSS
+- Vanilla JavaScript
+- Normalize.css
+- Git & GitHub
 
-## 📂 Project Structure
+## Development Roadmap
 
-```text
-PomoDaff/
-├── css/
-│   ├── normalize.css
-│   └── style.css
-├── js/
-│   └── main.js
-├── assets/
-│   └── images/
-├── index.html
-└── README.md
+- [ ] Complete countdown functionality
+- [ ] Implement start, pause, and reset controls
+- [ ] Introduce configurable focus and break intervals
+- [ ] Implement stopwatch and lap functionality
+- [ ] Introduce visual progress indicators
+- [ ] Implement session history and activity tracking
+- [ ] Introduce weekly productivity goals
+- [ ] Test keyboard accessibility and responsive behavior
+- [ ] Deploy the application
+
+## Development Philosophy
+
+PomoDaff is being developed incrementally, prioritizing functionality, usability, accessibility, and maintainability before introducing additional complexity.
